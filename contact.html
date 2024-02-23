@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <section class="logo">
+                <i class="fa-solid fa-comments"> Chatty</i>
+            </section>
+            <ul class="links">
+                <li class="home-link">
+                    <a href="index.html"><i class="fa-solid fa-house"> Home</i></a>
+                </li>
+                <li class="post-link">
+                    <a href="./posts.html"><i class="fa-brands fa-readme"> Posts</i></a>
+                </li>
+                <li class="contact-link">
+                    <a href="./contact.html" class="active"><i class="fa-solid fa-envelope"> Contact</i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section class="contact-section">
+        <h1>Get in Touch!</h1>
+        <form id="contactForm" class="contact-form">
+            <fieldset>
+                <input type="text" id="name" placeholder="Name" required pattern="[A-Za-z]+" title="Only letters and No spaces">
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="issue" placeholder="Your issue" required></textarea>
+                <label for="confirm"><input type="checkbox" id="confirm" required> Confirm</label>
+                <button type="submit" id="send">Send</button>
+            </fieldset>
+        </form>
+        <div id="contactErrorMessages"></div>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

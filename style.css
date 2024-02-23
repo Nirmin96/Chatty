@@ -1,0 +1,276 @@
+* {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Top Nav for all pages*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background-color: #d7aa3e;
+}
+nav a {
+color: #5d3737;
+}
+
+.links a.active{
+color: #515c32;
+}
+
+.links {
+margin-top: 15px;
+display: flex;
+gap: 5px;
+}
+
+.logo {
+margin-left: 10px;
+margin-top: 10px;
+display: inline;
+color:#f8f2f0 ;
+font-size: x-large;
+}
+
+.contact-link {
+margin-right: 20px;
+}
+.home-link {
+  margin-right: 5px;
+}
+.post-link {
+  margin-right: 5px;
+}
+
+
+/* Home Page.*/
+
+.home-page{
+  margin-top: 5%;
+  margin-left:25%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 3px 3px #d7aa3e;
+}
+
+figure {
+width: 50%;
+}
+
+figure img {
+width: 100%;
+}
+
+.home-page h1 {
+color: #5d3737;
+}
+
+.home-page p {
+text-align: center;
+margin-bottom: 5px;
+color: #515c32;;
+}
+/*contact page*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #d7aa3e;
+  border-radius: 8px;
+}
+
+.contact-section h1 {
+  margin-top: 90px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #5d3737;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+fieldset input {
+  margin-bottom: 15px;
+}
+
+textarea {
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /*padding doesn't affect the total width */
+}
+
+.contact-form input::placeholder {
+  color: #999;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+.contact-form label {
+  display: block;
+  color: #5d3737;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #9cab75;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #515c32;
+}
+
+/* Posts page*/
+.data-container{
+  display: flex;
+}
+
+.posts-comments-section {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  background-color: #f8f2f0;
+  padding: 10px;
+}
+
+/*Post*/
+.post-body {
+  font-size: large;
+  color: #341f5f;
+  }
+  
+  .post-title {
+  color: #515c32;
+  }
+  
+  .post-buttons{
+  gap: 0px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  }
+  .prev-post {
+  width: 200px;
+  height:30px;
+  color: #5d3737;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .next-post {
+  width: 200px;
+  height:30px;
+  color: #5d3737;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+/* User Info*/
+.showUserInfo-btn {
+  width: 200px;
+  height:30px;
+  color: #5d3737;
+  background-color: #d7aa3e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+.first-lastname {
+    color: #5d3737;
+    margin-bottom: 10px;
+  }
+
+#userInfoModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4);
+}
+
+#userInfoModal > article {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#closeModal {
+  color: #6b2525;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+  background-color: #d7aa3e;
+  color: black;
+  cursor: pointer;
+}
+
+/*Post Comments*/
+.ShowComments-btn {
+  width: 200px;
+  height:30px;
+  color: #5d3737;
+  background-color: #d7aa3e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.comment-users {
+  color: #515c32;
+  }
+
+.comment-users i {
+    font-size: 10px;
+  }
+    
+
+/*Tags*/
+.tags-icon{
+color:#83a138 ;
+}
+
+/*Reactions*/
+.reactions-icon{
+color: #c23333;
+}
